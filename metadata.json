@@ -1,0 +1,5 @@
+{
+  "name": " CipherGuardian",
+  "description": "CipherGuardian scans and protects your device from every angle. It analyzes SMS messages, images from social media, and any link you receive for threats like phishing, malware, and steganography. With real-time detection, it automatically flags malicious content to keep you secure.",
+  "requestFramePermissions": []
+}

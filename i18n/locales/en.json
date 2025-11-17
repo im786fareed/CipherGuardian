@@ -1,0 +1,367 @@
+
+{
+  "app": {
+    "title": "OTP Guardian",
+    "subtitle": "Real-time threat detection for messages, images, and links.",
+    "textAnalysisMode": "Text Analysis",
+    "imageAnalysisMode": "Image Analysis",
+    "urlAnalysisMode": "URL Analysis",
+    "analyzing": "Analyzing...",
+    "analysisModeLabel": "Analysis Mode"
+  },
+  "aria": {
+    "openHelp": "Open help and FAQ",
+    "closeHelp": "Close help and FAQ"
+  },
+  "otpInput": {
+    "label": "SMS / Text Message",
+    "placeholder": "e.g., Your OTP is 123456. Or, a message from 'Delhi Police' asking for payment.",
+    "button": {
+      "scan": "Scan Message",
+      "scanning": "Scanning..."
+    }
+  },
+  "imageInput": {
+    "alt": "Selected preview",
+    "clear": "Clear selected image",
+    "upload": {
+      "click": "Click to upload",
+      "drag": "or drag and drop",
+      "types": "PNG, JPG, GIF up to 10MB",
+      "label": "Upload an image for analysis. Click or drag a file here."
+    },
+    "button": {
+      "scan": "Scan Image",
+      "scanning": "Scanning..."
+    }
+  },
+  "urlInput": {
+    "label": "URL to Analyze",
+    "placeholder": "e.g., https://example.com/suspicious-link",
+    "button": {
+      "scan": "Scan URL",
+      "scanning": "Scanning..."
+    }
+  },
+  "analysis": {
+    "textAnalysisTitle": "Text Analysis",
+    "imageAnalysisTitle": "Image Analysis",
+    "urlAnalysisTitle": "URL Analysis",
+    "offlineMode": "Offline Mode",
+    "expiresIn": "Expires in",
+    "source": "Source",
+    "analysis": "Analysis",
+    "processing": "Processing...",
+    "successTitle": "Success",
+    "errorTitle": "Error",
+    "retry": "Retry",
+    "otpExpiredTitle": "OTP Expired",
+    "otpExpiredBody": "The OTP window has closed for security. Please request a new one if needed.",
+    "actionSuccess": "Action \"{{action}}\" processed successfully.",
+    "actionError": "Failed to process action.",
+    "url": {
+      "title": "URL Detected",
+      "suspiciousTitle": "Suspicious URL Detected",
+      "warningPrefix": "Warning",
+      "defaultWarning": "This link could be a phishing attempt. Do not click it.",
+      "findings": "Findings",
+      "recommendation": "Recommendation",
+      "domainDetails": "Domain Details",
+      "domain": "Domain",
+      "secureConnection": "Secure (HTTPS)",
+      "newDomain": "Recently Created",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "otp": {
+      "label": "Detected OTP (do not share)",
+      "flip": "Flip OTP",
+      "showNormal": "Show Normal OTP",
+      "autofillDisabled": "Auto-fill disabled. Type manually if safe."
+    },
+    "context": {
+      "pattern": "Pattern",
+      "patternValue": "{{count}} OTPs/hr",
+      "patternNormal": "Normal",
+      "time": "Time",
+      "timeValue": "{{score}}% unusual",
+      "location": "Location",
+      "locationExpected": "Expected",
+      "locationUnexpected": "Unexpected",
+      "device": "Device",
+      "deviceNew": "New Device",
+      "deviceKnown": "Known Device"
+    },
+    "verification": {
+      "spoofedTitle": "Known Spoofed Service",
+      "spoofedBody": "This sender is impersonating {{serviceName}}. DO NOT respond.",
+      "verifiedTitle": "Verified Sender",
+      "verifiedBody": "Sender ID appears to be official.",
+      "suspiciousTitle": "Suspicious Sender",
+      "suspiciousBody": "The sender ID (e.g., a personal number) is not typical for {{serviceName}}. High risk of scam.",
+      "unverifiedTitle": "Unverified Sender",
+      "unverifiedBody": "We couldn't verify this sender. Proceed with caution."
+    },
+    "digitalArrest": {
+      "title": "DIGITAL ARREST SCAM DETECTED",
+      "isolationTactics": "Isolation Tactics",
+      "detected": "Detected",
+      "notDetected": "Not Detected",
+      "paymentUrgency": "Payment Urgency",
+      "checklistTitle": "Safety Checklist",
+      "checklist1Title": "DO NOT PAY",
+      "checklist1Body": "Real authorities never demand urgent payment via message.",
+      "checklist2Title": "VERIFY",
+      "checklist2Body": "Contact the agency (e.g., Police) using an official number, not from the message.",
+      "checklist3Title": "BREAK SECRECY",
+      "checklist3Body": "Scammers isolate you. Talk to family or your bank immediately."
+    },
+    "image": {
+      "steganographyDetails": "Steganography Details",
+      "confidenceScore": "Confidence Score",
+      "foundQRCodes": "Found {{count}} QR code(s).",
+      "foundMetadataAnomalies": "Metadata Anomalies",
+      "foundFileSignatures": "Embedded File Signatures",
+      "colorAnomalyScore": "Color Anomaly Score",
+      "findings": "Findings",
+      "noFindings": "No specific threats found.",
+      "recommendation": "Recommendation"
+    }
+  },
+  "threatLevels": {
+    "safe": "Safe",
+    "caution": "Caution",
+    "danger": "High-Risk"
+  },
+  "actions": {
+    "block": "🛑 Block & Report",
+    "verify": "✓ Verify First",
+    "proceedCautiously": "→ Proceed Cautiously",
+    "proceed": "→ Proceed",
+    "contactPolice": "📞 Contact Police (112)",
+    "blockSender": "🛑 Block Sender",
+    "deleteImage": "🗑️ Delete Image",
+    "blockUrl": "🛑 Block URL"
+  },
+  "feedback": {
+    "prompt": "Was this analysis correct?",
+    "yes": "Yes",
+    "no": "No",
+    "thanks": "Thank you for your feedback!",
+    "correct": "correct",
+    "incorrect": "incorrect"
+  },
+  "log": {
+    "title": "Analysis History",
+    "empty": "No items analyzed yet.",
+    "offline": {
+      "source": "Offline Analysis",
+      "details": "Heuristic offline check performed due to API error."
+    },
+    "digitalArrest": {
+      "source": "Threatening Message",
+      "details": "Digital Arrest Scam pattern detected."
+    },
+    "otpAnalysis": {
+      "prefix": "OTP Analysis"
+    },
+    "imageScan": {
+      "details": "Image Steganography Scan",
+      "source": "Image Scan"
+    },
+    "urlScan": {
+      "details": "URL Threat Scan",
+      "source": "URL Scan"
+    },
+    "lastAnalysis": "last analysis",
+    "userAction": {
+      "source": "User Action",
+      "details": "User chose to '{{action}}' the item from {{source}}."
+    },
+    "userFeedback": {
+      "source": "User Feedback",
+      "details": "User reported analysis for \"{{source}}\" as {{correctness}}."
+    }
+  },
+  "dashboard": {
+    "title": "Threat Dashboard",
+    "totalScans": "Total Scans",
+    "highRiskAlerts": "High-Risk Alerts",
+    "threatDistribution": "Threat Distribution"
+  },
+  "settings": {
+    "title": "Settings",
+    "sensitivity": {
+      "label": "Offline Threat Sensitivity",
+      "standard": "Standard",
+      "high": "High",
+      "standardDesc": "Standard rules for common threats.",
+      "highDesc": "More aggressive detection. May result in more false positives."
+    }
+  },
+  "simulator": {
+    "title": "Threat Simulator",
+    "description": "Use these actions to test how the Guardian reacts to different threat scenarios.",
+    "button": {
+      "default": "Simulate Login Failure",
+      "clicked": "Flag Set!"
+    },
+    "helperText": "Flags the next OTP as suspicious."
+  },
+  "notifications": {
+    "title": "Real-time Alerts",
+    "status": {
+      "enabled": "Real-time threat alerts are enabled.",
+      "denied": "Notifications are blocked. Enable them in your browser settings for real-time alerts."
+    },
+    "prompt": {
+      "title": "Get real-time alerts",
+      "button": "Enable Notifications"
+    },
+    "enabled": {
+      "title": "Notifications Enabled!",
+      "body": "You will now receive real-time alerts for high-risk threats."
+    },
+    "offlineDanger": {
+      "title": "🚨 High-Risk Threat Detected (Offline)!",
+      "body": "A message was flagged based on keywords indicating a potential scam."
+    },
+    "onlineDanger": {
+      "title": "🚨 High-Risk Threat Detected!",
+      "analysisPrefix": "Analysis"
+    },
+    "imageDanger": {
+      "title": "🚨 High-Risk Image Detected!",
+      "recommendationPrefix": "Recommendation"
+    },
+    "urlDanger": {
+      "title": "🚨 High-Risk URL Detected!",
+      "recommendationPrefix": "Recommendation"
+    }
+  },
+  "help": {
+    "title": "Help & Security Center",
+    "privacy": {
+      "title": "Privacy & Data Security",
+      "intro": "Your privacy is paramount. Here's how OTP Guardian handles your data in this simulation:",
+      "item1Title": "On-Device Simulation",
+      "item1Body": "All analysis happens directly in your browser. No messages, images, or personal data are ever sent to or stored on a server.",
+      "item2Title": "Local Storage Only",
+      "item2Body": "The \"Analysis History\" log is saved only in your browser's local storage. Clearing your browser data will erase this history.",
+      "item3Title": "No Tracking",
+      "item3Body": "This application does not use cookies or tracking scripts to monitor your activity.",
+      "outro": "In a real-world mobile app, these principles would be strictly enforced to ensure maximum user privacy."
+    },
+    "howItWorks": {
+      "title": "How OTP Guardian Works",
+      "intro": "OTP Guardian is a security simulator that uses advanced AI to analyze messages and images for potential threats, helping you stay safe from scams.",
+      "item1Title": "Text Analysis",
+      "item1Body": "Detects suspicious One-Time Passwords (OTPs), phishing links, and dangerous scam patterns like \"Digital Arrest\" by analyzing language, sender, and context.",
+      "item2Title": "Image Analysis",
+      "item2Body": "Scans images for hidden data (steganography), such as malicious QR codes, hidden text, or embedded files that could compromise your device."
+    },
+    "bestPractices": {
+      "title": "General Security Best Practices",
+      "item1Title": "Use Strong Passwords",
+      "item1Body": "Create unique and complex passwords for each of your online accounts.",
+      "item2Title": "Enable 2FA",
+      "item2Body": "Always enable Two-Factor Authentication for an extra layer of security.",
+      "item3Title": "Be Wary of Public Wi-Fi",
+      "item3Body": "Avoid accessing sensitive accounts (like banking) on unsecured public networks.",
+      "item4Title": "Keep Software Updated",
+      "item4Body": "Regularly update your OS and apps to get the latest security patches.",
+      "item5Title": "Think Before You Click",
+      "item5Body": "If a link or attachment seems suspicious, don't open it. Verify the sender first."
+    },
+    "scamTypes": {
+      "title": "Common Scam Types",
+      "digitalArrest": {
+        "title": "Digital Arrest Scam",
+        "body": "Fraudsters impersonate Law Enforcement officials and threaten arrest. Never share personal info or pay them."
+      },
+      "fakeParcel": {
+        "title": "Fake Parcel Scam",
+        "body": "Scammers claim your parcel contains illegal items. Don’t click unknown delivery links. Verify with the courier service directly."
+      },
+      "apkFraud": {
+        "title": ".APK File Fraud",
+        "body": "Fraudsters send malicious .apk file links via SMS or WhatsApp. Only download apps from official app stores."
+      },
+      "jobOffer": {
+        "title": "Job Offer Fraud",
+        "body": "Fake job offers ask for fees or banking details. Never pay for a job offer or share sensitive financial information."
+      },
+      "esimFraud": {
+        "title": "eSIM Fraud",
+        "body": "Scammers send fake eSIM activation links to take over your number. Never click suspicious eSIM links or share OTPs."
+      },
+      "moneyMule": {
+        "title": "Money Mule Fraud",
+        "body": "Fraudsters offer easy money to trick you into moving illicit funds through your bank account. Never let anyone use your account for transactions."
+      },
+      "lottery": {
+        "title": "Lottery & Prize Scams",
+        "body": "If you \"won\" a prize for a contest you never entered, it's a scam. You should never have to pay a fee to claim a legitimate prize."
+      }
+    },
+    "disclaimer": "This is a web simulation. In a real app, analysis would happen locally on your device to protect your privacy."
+  },
+  "education": {
+    "about": "About",
+    "sim_swap": {
+      "title": "SIM Swap Fraud",
+      "text": "Attackers transfer your number to their SIM to intercept OTPs. Watch for sudden loss of signal."
+    },
+    "phishing": {
+      "title": "Phishing Attacks",
+      "text": "Attackers create fake websites or send deceptive messages to steal your credentials. Never click links in unexpected messages."
+    },
+    "account_takeover": {
+      "title": "Account Takeover",
+      "text": "Attackers use stolen passwords to gain access. Use strong, unique passwords and 2FA."
+    },
+    "digital_arrest": {
+      "title": "Digital Arrest Scam",
+      "text": "Scammers impersonate police to create panic and demand money. Real authorities will not conduct investigations over WhatsApp or demand urgent payment."
+    }
+  },
+  "error": {
+    "emptyMessage": "Please enter a message to analyze.",
+    "apiFailed": "AI analysis failed. Showing basic offline assessment.",
+    "selectImage": "Please select an image to analyze.",
+    "imageApiFailed": "Failed to analyze the image. The API might be unavailable or the format is unsupported.",
+    "emptyUrl": "Please enter a URL to analyze.",
+    "urlApiFailed": "Failed to analyze the URL. The API might be unavailable or the URL is invalid."
+  },
+  "offline": {
+    "noThreats": "No obvious threats detected in offline mode.",
+    "unknownService": "Unknown (Offline)",
+    "urlUnverified": "URL cannot be verified in offline mode.",
+    "rules": {
+        "digitalArrest": "Mentions legal/police action, a common Digital Arrest scam tactic.",
+        "apkFile": "Contains a link to a potentially malicious '.apk' file.",
+        "urgentLanguage": "Uses urgent and threatening language to create panic.",
+        "moneyMule": "Offers easy money for transferring funds, a potential Money Mule scam.",
+        "parcelScam": "Relates to a parcel delivery, a common vector for phishing scams.",
+        "jobOffer": "Mentions a job offer with suspicious terms (e.g., asking for fees).",
+        "esim": "Mentions eSIM activation, which can be a vector for SIM swap fraud.",
+        "lottery": "Claims you've won a prize, a common lottery scam.",
+        "otpLike": "Contains an OTP-like code. Verify the source before using.",
+        "biometric": "Asks for verification of biometric data, which is an unusual request via text.",
+        "mfa": "References multi-factor authentication; verify any requested action.",
+        "hardwareKey": "Mentions a hardware security key, a high-value target for scammers.",
+        "containsLink": "Contains a link. Verify before clicking, as it cannot be checked offline."
+    }
+  },
+  "threats": {
+      "loginFailure": "OTP requested after a recent login failure.",
+      "highValue": "High-value transaction detected:",
+      "multipleOtps": "Multiple OTPs received within 5 minutes.",
+      "standardOtp": "Looks like a standard OTP message."
+  },
+  "sender": {
+      "suspicious": "Suspicious",
+      "unverified": "Unverified",
+      "verified": "Verified"
+  }
+}

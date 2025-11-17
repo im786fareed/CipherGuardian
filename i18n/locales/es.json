@@ -1,0 +1,367 @@
+
+{
+  "app": {
+    "title": "Guardián de OTP",
+    "subtitle": "Detección de amenazas en tiempo real para mensajes, imágenes y enlaces.",
+    "textAnalysisMode": "Análisis de Texto",
+    "imageAnalysisMode": "Análisis de Imagen",
+    "urlAnalysisMode": "Análisis de URL",
+    "analyzing": "Analizando...",
+    "analysisModeLabel": "Modo de Análisis"
+  },
+  "aria": {
+    "openHelp": "Abrir ayuda y preguntas frecuentes",
+    "closeHelp": "Cerrar ayuda y preguntas frecuentes"
+  },
+  "otpInput": {
+    "label": "Mensaje de Texto / SMS",
+    "placeholder": "Ej., Tu OTP es 123456. O un mensaje de la 'Policía de Delhi' pidiendo un pago.",
+    "button": {
+      "scan": "Escanear Mensaje",
+      "scanning": "Escaneando..."
+    }
+  },
+  "imageInput": {
+    "alt": "Vista previa seleccionada",
+    "clear": "Eliminar imagen seleccionada",
+    "upload": {
+      "click": "Haz clic para subir",
+      "drag": "o arrastra y suelta",
+      "types": "PNG, JPG, GIF hasta 10MB",
+      "label": "Sube una imagen para analizar. Haz clic o arrastra un archivo aquí."
+    },
+    "button": {
+      "scan": "Escanear Imagen",
+      "scanning": "Escaneando..."
+    }
+  },
+  "urlInput": {
+    "label": "URL a Analizar",
+    "placeholder": "ej., https://ejemplo.com/enlace-sospechoso",
+    "button": {
+      "scan": "Escanear URL",
+      "scanning": "Escaneando..."
+    }
+  },
+  "analysis": {
+    "textAnalysisTitle": "Análisis de Texto",
+    "imageAnalysisTitle": "Análisis de Imagen",
+    "urlAnalysisTitle": "Análisis de URL",
+    "offlineMode": "Modo sin conexión",
+    "expiresIn": "Expira en",
+    "source": "Fuente",
+    "analysis": "Análisis",
+    "processing": "Procesando...",
+    "successTitle": "Éxito",
+    "errorTitle": "Error",
+    "retry": "Reintentar",
+    "otpExpiredTitle": "OTP Expirado",
+    "otpExpiredBody": "La ventana de OTP se ha cerrado por seguridad. Por favor, solicita uno nuevo si es necesario.",
+    "actionSuccess": "Acción \"{{action}}\" procesada con éxito.",
+    "actionError": "Error al procesar la acción.",
+    "url": {
+      "title": "URL Detectada",
+      "suspiciousTitle": "URL Sospechosa Detectada",
+      "warningPrefix": "Advertencia",
+      "defaultWarning": "Este enlace podría ser un intento de phishing. No hagas clic en él.",
+      "findings": "Hallazgos",
+      "recommendation": "Recomendación",
+      "domainDetails": "Detalles del Dominio",
+      "domain": "Dominio",
+      "secureConnection": "Seguro (HTTPS)",
+      "newDomain": "Creado Recientemente",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "otp": {
+      "label": "OTP detectado (no compartir)",
+      "flip": "Invertir OTP",
+      "showNormal": "Mostrar OTP Normal",
+      "autofillDisabled": "Autocompletar desactivado. Escribe manualmente si es seguro."
+    },
+    "context": {
+      "pattern": "Patrón",
+      "patternValue": "{{count}} OTPs/hr",
+      "patternNormal": "Normal",
+      "time": "Hora",
+      "timeValue": "{{score}}% inusual",
+      "location": "Ubicación",
+      "locationExpected": "Esperada",
+      "locationUnexpected": "Inesperada",
+      "device": "Dispositivo",
+      "deviceNew": "Dispositivo Nuevo",
+      "deviceKnown": "Dispositivo Conocido"
+    },
+    "verification": {
+      "spoofedTitle": "Servicio Falsificado Conocido",
+      "spoofedBody": "Este remitente está suplantando a {{serviceName}}. NO respondas.",
+      "verifiedTitle": "Remitente Verificado",
+      "verifiedBody": "El ID del remitente parece ser oficial.",
+      "suspiciousTitle": "Remitente Sospechoso",
+      "suspiciousBody": "El ID del remitente (ej., un número personal) no es típico para {{serviceName}}. Alto riesgo de estafa.",
+      "unverifiedTitle": "Remitente no Verificado",
+      "unverifiedBody": "No pudimos verificar este remitente. Procede con precaución."
+    },
+    "digitalArrest": {
+      "title": "ESTAFA DE ARRESTO DIGITAL DETECTADA",
+      "isolationTactics": "Tácticas de Aislamiento",
+      "detected": "Detectado",
+      "notDetected": "No Detectado",
+      "paymentUrgency": "Urgencia de Pago",
+      "checklistTitle": "Lista de Verificación de Seguridad",
+      "checklist1Title": "NO PAGUES",
+      "checklist1Body": "Las autoridades reales nunca exigen pagos urgentes por mensaje.",
+      "checklist2Title": "VERIFICA",
+      "checklist2Body": "Contacta a la agencia (ej., Policía) usando un número oficial, no el del mensaje.",
+      "checklist3Title": "ROMPE EL SECRETO",
+      "checklist3Body": "Los estafadores te aíslan. Habla con tu familia o tu banco inmediatamente."
+    },
+    "image": {
+      "steganographyDetails": "Detalles de Esteganografía",
+      "confidenceScore": "Puntuación de Confianza",
+      "foundQRCodes": "Se encontraron {{count}} código(s) QR.",
+      "foundMetadataAnomalies": "Anomalías de Metadatos",
+      "foundFileSignatures": "Firmas de Archivos Incrustados",
+      "colorAnomalyScore": "Puntuación de Anomalía de Color",
+      "findings": "Hallazgos",
+      "noFindings": "No se encontraron amenazas específicas.",
+      "recommendation": "Recomendación"
+    }
+  },
+  "threatLevels": {
+    "safe": "Seguro",
+    "caution": "Precaución",
+    "danger": "Alto Riesgo"
+  },
+  "actions": {
+    "block": "🛑 Bloquear y Reportar",
+    "verify": "✓ Verificar Primero",
+    "proceedCautiously": "→ Proceder con Cautela",
+    "proceed": "→ Proceder",
+    "contactPolice": "📞 Contactar a la Policía (112)",
+    "blockSender": "🛑 Bloquear Remitente",
+    "deleteImage": "🗑️ Eliminar Imagen",
+    "blockUrl": "🛑 Bloquear URL"
+  },
+  "feedback": {
+    "prompt": "¿Fue correcto este análisis?",
+    "yes": "Sí",
+    "no": "No",
+    "thanks": "¡Gracias por tus comentarios!",
+    "correct": "correcto",
+    "incorrect": "incorrecto"
+  },
+  "log": {
+    "title": "Historial de Análisis",
+    "empty": "Aún no se han analizado elementos.",
+    "offline": {
+      "source": "Análisis sin conexión",
+      "details": "Verificación heurística sin conexión realizada debido a un error de la API."
+    },
+    "digitalArrest": {
+      "source": "Mensaje Amenazante",
+      "details": "Patrón de estafa de Arresto Digital detectado."
+    },
+    "otpAnalysis": {
+      "prefix": "Análisis de OTP"
+    },
+    "imageScan": {
+      "details": "Escaneo de Esteganografía de Imagen",
+      "source": "Escaneo de Imagen"
+    },
+    "urlScan": {
+      "details": "Escaneo de Amenazas de URL",
+      "source": "Escaneo de URL"
+    },
+    "lastAnalysis": "último análisis",
+    "userAction": {
+      "source": "Acción del Usuario",
+      "details": "El usuario eligió '{{action}}' el elemento de {{source}}."
+    },
+    "userFeedback": {
+      "source": "Comentarios del Usuario",
+      "details": "El usuario reportó el análisis para \"{{source}}\" como {{correctness}}."
+    }
+  },
+  "dashboard": {
+    "title": "Panel de Amenazas",
+    "totalScans": "Escaneos Totales",
+    "highRiskAlerts": "Alertas de Alto Riesgo",
+    "threatDistribution": "Distribución de Amenazas"
+  },
+  "settings": {
+    "title": "Configuración",
+    "sensitivity": {
+      "label": "Sensibilidad de Amenazas sin Conexión",
+      "standard": "Estándar",
+      "high": "Alta",
+      "standardDesc": "Reglas estándar para amenazas comunes.",
+      "highDesc": "Detección más agresiva. Puede resultar en más falsos positivos."
+    }
+  },
+  "simulator": {
+    "title": "Simulador de Amenazas",
+    "description": "Usa estas acciones para probar cómo reacciona el Guardián a diferentes escenarios de amenaza.",
+    "button": {
+      "default": "Simular Fallo de Inicio de Sesión",
+      "clicked": "¡Marca Establecida!"
+    },
+    "helperText": "Marca el próximo OTP como sospechoso."
+  },
+  "notifications": {
+    "title": "Alertas en Tiempo Real",
+    "status": {
+      "enabled": "Las alertas de amenazas en tiempo real están habilitadas.",
+      "denied": "Las notificaciones están bloqueadas. Habilítalas en la configuración de tu navegador para recibir alertas en tiempo real."
+    },
+    "prompt": {
+      "title": "Recibe alertas en tiempo real",
+      "button": "Habilitar Notificaciones"
+    },
+    "enabled": {
+      "title": "¡Notificaciones Habilitadas!",
+      "body": "Ahora recibirás alertas en tiempo real para amenazas de alto riesgo."
+    },
+    "offlineDanger": {
+      "title": "🚨 ¡Amenaza de Alto Riesgo Detectada (Sin Conexión)!",
+      "body": "Un mensaje fue marcado basado en palabras clave que indican una posible estafa."
+    },
+    "onlineDanger": {
+      "title": "🚨 ¡Amenaza de Alto Riesgo Detectada!",
+      "analysisPrefix": "Análisis"
+    },
+    "imageDanger": {
+      "title": "🚨 ¡Imagen de Alto Riesgo Detectada!",
+      "recommendationPrefix": "Recomendación"
+    },
+    "urlDanger": {
+      "title": "🚨 ¡URL de Alto Riesgo Detectada!",
+      "recommendationPrefix": "Recomendación"
+    }
+  },
+  "help": {
+    "title": "Centro de Ayuda y Seguridad",
+    "privacy": {
+      "title": "Privacidad y Seguridad de Datos",
+      "intro": "Tu privacidad es primordial. Así es como OTP Guardian maneja tus datos en esta simulación:",
+      "item1Title": "Simulación en el Dispositivo",
+      "item1Body": "Todo el análisis ocurre directamente en tu navegador. Ningún mensaje, imagen o dato personal se envía o almacena en un servidor.",
+      "item2Title": "Solo Almacenamiento Local",
+      "item2Body": "El registro de \"Historial de Análisis\" se guarda solo en el almacenamiento local de tu navegador. Limpiar los datos de tu navegador borrará este historial.",
+      "item3Title": "Sin Seguimiento",
+      "item3Body": "Esta aplicación no utiliza cookies ni scripts de seguimiento para monitorear tu actividad.",
+      "outro": "En una aplicación móvil real, estos principios se aplicarían estrictamente para garantizar la máxima privacidad del usuario."
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona OTP Guardian",
+      "intro": "OTP Guardian es un simulador de seguridad que utiliza IA avanzada para analizar mensajes e imágenes en busca de posibles amenazas, ayudándote a mantenerte a salvo de estafas.",
+      "item1Title": "Análisis de Texto",
+      "item1Body": "Detecta contraseñas de un solo uso (OTPs) sospechosas, enlaces de phishing y patrones de estafa peligrosos como el \"Arresto Digital\" analizando el lenguaje, el remitente y el contexto.",
+      "item2Title": "Análisis de Imagen",
+      "item2Body": "Escanea imágenes en busca de datos ocultos (esteganografía), como códigos QR maliciosos, texto oculto o archivos incrustados que podrían comprometer tu dispositivo."
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas de Seguridad General",
+      "item1Title": "Usa Contraseñas Seguras",
+      "item1Body": "Crea contraseñas únicas y complejas para cada una de tus cuentas en línea.",
+      "item2Title": "Habilita 2FA",
+      "item2Body": "Siempre habilita la Autenticación de Dos Factores para una capa extra de seguridad.",
+      "item3Title": "Ten Cuidado con el Wi-Fi Público",
+      "item3Body": "Evita acceder a cuentas sensibles (como las bancarias) en redes públicas no seguras.",
+      "item4Title": "Mantén el Software Actualizado",
+      "item4Body": "Actualiza regularmente tu sistema operativo y aplicaciones para obtener los últimos parches de seguridad.",
+      "item5Title": "Piensa Antes de Hacer Clic",
+      "item5Body": "Si un enlace o archivo adjunto parece sospechoso, no lo abras. Verifica primero al remitente."
+    },
+    "scamTypes": {
+      "title": "Tipos Comunes de Estafas",
+      "digitalArrest": {
+        "title": "Estafa de Arresto Digital",
+        "body": "Los estafadores se hacen pasar por oficiales de la ley y amenazan con arrestarte. Nunca compartas información personal ni les pagues."
+      },
+      "fakeParcel": {
+        "title": "Estafa del Paquete Falso",
+        "body": "Los estafadores afirman que tu paquete contiene artículos ilegales. No hagas clic en enlaces de entrega desconocidos. Verifica directamente con el servicio de mensajería."
+      },
+      "apkFraud": {
+        "title": "Fraude de Archivo .APK",
+        "body": "Los estafadores envían enlaces de archivos .apk maliciosos por SMS o WhatsApp. Solo descarga aplicaciones de tiendas oficiales."
+      },
+      "jobOffer": {
+        "title": "Fraude de Oferta de Empleo",
+        "body": "Las ofertas de trabajo falsas piden tarifas o datos bancarios. Nunca pagues por una oferta de trabajo ni compartas información financiera sensible."
+      },
+      "esimFraud": {
+        "title": "Fraude de eSIM",
+        "body": "Los estafadores envían enlaces falsos de activación de eSIM para apoderarse de tu número. Nunca hagas clic en enlaces de eSIM sospechosos ni compartas OTPs."
+      },
+      "moneyMule": {
+        "title": "Fraude de Mula de Dinero",
+        "body": "Los estafadores ofrecen dinero fácil para engañarte y que muevas fondos ilícitos a través de tu cuenta bancaria. Nunca dejes que nadie use tu cuenta para transacciones."
+      },
+      "lottery": {
+        "title": "Estafas de Lotería y Premios",
+        "body": "Si \"ganaste\" un premio en un concurso en el que nunca participaste, es una estafa. Nunca deberías tener que pagar una tarifa para reclamar un premio legítimo."
+      }
+    },
+    "disclaimer": "Esto es una simulación web. En una aplicación real, el análisis se realizaría localmente en tu dispositivo para proteger tu privacidad."
+  },
+  "education": {
+    "about": "Acerca de",
+    "sim_swap": {
+      "title": "Fraude de Intercambio de SIM",
+      "text": "Los atacantes transfieren tu número a su SIM para interceptar OTPs. Presta atención a una pérdida repentina de señal."
+    },
+    "phishing": {
+      "title": "Ataques de Phishing",
+      "text": "Los atacantes crean sitios web falsos o envían mensajes engañosos para robar tus credenciales. Nunca hagas clic en enlaces de mensajes inesperados."
+    },
+    "account_takeover": {
+      "title": "Toma de Control de Cuenta",
+      "text": "Los atacantes usan contraseñas robadas para acceder. Usa contraseñas fuertes y únicas y 2FA."
+    },
+    "digital_arrest": {
+      "title": "Estafa de Arresto Digital",
+      "text": "Los estafadores se hacen pasar por la policía para crear pánico y exigir dinero. Las autoridades reales no realizarán investigaciones por WhatsApp ni exigirán pagos urgentes."
+    }
+  },
+  "error": {
+    "emptyMessage": "Por favor, introduce un mensaje para analizar.",
+    "apiFailed": "El análisis de IA falló. Mostrando evaluación básica sin conexión.",
+    "selectImage": "Por favor, selecciona una imagen para analizar.",
+    "imageApiFailed": "No se pudo analizar la imagen. La API podría no estar disponible o el formato no es compatible.",
+    "emptyUrl": "Por favor, introduce una URL para analizar.",
+    "urlApiFailed": "No se pudo analizar la URL. La API podría no estar disponible o la URL no es válida."
+  },
+  "offline": {
+    "noThreats": "No se detectaron amenazas obvias en modo sin conexión.",
+    "unknownService": "Desconocido (sin conexión)",
+    "urlUnverified": "La URL no se puede verificar en modo sin conexión.",
+    "rules": {
+      "digitalArrest": "Menciona acciones legales/policiales, una táctica común de estafa de Arresto Digital.",
+      "apkFile": "Contiene un enlace a un archivo '.apk' potencialmente malicioso.",
+      "urgentLanguage": "Usa un lenguaje urgente y amenazante para crear pánico.",
+      "moneyMule": "Ofrece dinero fácil por transferir fondos, una posible estafa de Mula de Dinero.",
+      "parcelScam": "Se relaciona con la entrega de un paquete, un vector común para estafas de phishing.",
+      "jobOffer": "Menciona una oferta de trabajo con términos sospechosos (ej., pidiendo tarifas).",
+      "esim": "Menciona la activación de eSIM, que puede ser un vector para el fraude de intercambio de SIM.",
+      "lottery": "Afirma que has ganado un premio, una estafa de lotería común.",
+      "otpLike": "Contiene un código similar a un OTP. Verifica la fuente antes de usarlo.",
+      "biometric": "Pide la verificación de datos biométricos, una solicitud inusual por texto.",
+      "mfa": "Hace referencia a la autenticación multifactor; verifica cualquier acción solicitada.",
+      "hardwareKey": "Menciona una llave de seguridad de hardware, un objetivo de alto valor para los estafadores.",
+      "containsLink": "Contiene un enlace. Verifica antes de hacer clic, ya que no se puede comprobar sin conexión."
+    }
+  },
+  "threats": {
+    "loginFailure": "OTP solicitado después de un fallo de inicio de sesión reciente.",
+    "highValue": "Transacción de alto valor detectada:",
+    "multipleOtps": "Múltiples OTPs recibidos en 5 minutos.",
+    "standardOtp": "Parece un mensaje de OTP estándar."
+  },
+  "sender": {
+    "suspicious": "Sospechoso",
+    "unverified": "No verificado",
+    "verified": "Verificado"
+  }
+}
